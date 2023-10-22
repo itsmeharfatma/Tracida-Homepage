@@ -3,25 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Tracida</title>
 </head>
 
 <body>
-    
+    <!-- Navbar Starts-->
+    <nav class="relative container mx-auto py-12 px-6">
+        <!-- flex container -->
+        <div class="flex items-center justify-between">
+            <!-- logo -->
+            <div class="">
+                <h1 class="text-4xl font-bold text-accentColor">Tracida</h1>            
+            </div>
+            <!-- navbar menu items -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-slate-500 font-medium transition duration-300 group">Product<span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-slate-600"></span></a>
+                <a href="#" class="text-slate-500 font-medium transition duration-300 group">About Us<span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-slate-600"></span></a>
+                <a href="#" class="text-slate-500 font-medium transition duration-300 group">Industries<span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-slate-600"></span></a>
+                <a href="#" class="text-slate-500 font-medium transition duration-300 group">Contact Us<span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-slate-600"></span></a>
+                <a href="#" class="text-slate-500 font-medium transition duration-300 group">FAQs<span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-slate-600"></span></a>
+            </div>
+            <!-- button -->
+            <a href="#" class="hidden md:block md:inline-flex items-center justify-center p-0.5 overflow-hidden text-md font-medium text-accentColor shadow-md rounded-full group bg-gradient-to-br from-gradient2 via-gradient1 to-accentColor group-hover:from-gradient2 group-hover:to-accentColor hover:text-white">
+            <span class="relative px-4 py-1 transition-all ease-out duration-200 bg-white rounded-full group-hover:bg-opacity-0">
+                Get Started
+            </span></a>
 
+            <!-- hamburger icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col text-slate-600 items-center self-end hidden py-8 mt-10 space-y-6 font-medium bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">Product</a>
+                <a href="#">About Us</a>
+                <a href="#">Industries</a>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!-- Hero Section Starts -->
+    <section id="hero" class="bg-gray-100">
+        <!-- Flex container -->
+        <div class="container flex mt-10 items-center content-center px-6 py-12 mx-auto space-y-0 md:flex-col md:space-y-0">
+            <!-- Center items -->
+            <div class="flex flex-col space-y-5">
+                <h1 class="text-4xl text-accentColor font-semibold text-center md:text-5xl">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </h1>
+                <p class="text-slate-500 text-center text-darkGrayishBlue md:text-lg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quisquam vel quis quaerat, nesciunt ut harum quidem expedita aliquid hic esse corrupti quos accusantium modi impedit eos odit repellendu.
+                </p>
+                <div class="flex justify-center">
+                    <a href="#" class="mt-14 py-2 px-8 inline-flex items-center text-lg font-semibold text-white bg-accentColor rounded-full baseline transition duration-300 ease-out shadow-md shadow-accentColor/50 bg-gradient-to-r from-gradient1 to-accentColor hover:bg-gradient-to-bl">Get Started <span class="ml-2"><svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><style>svg{fill:#ffffff}</style><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></span> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section Ends -->
     
+    <!-- Product Section Starts -->
+
+    <!-- Product Section Ends -->
+
+
+
+
+
+
+
+
+
+
     <!-- for customizing the configuration  -->
     <script>
         tailwind.config = {
             theme: {
+                screens:{
+                    sm: '480px',
+                    md: '768px',
+                    lg: '976px',
+                    xl: '1440px',
+                },
                 extend: {
                     colors: {
-                        accentColor: '#1365bf',
-                    }
-                }
-            }
+                        accentColor: '#002266',
+                        gradient1: '#0044cc',
+                        gradient2: '#1a66ff',
+                        darkGrayishBlue: 'hsl(227, 12%, 61%)',
+                    },
+                },
+            },
         }
     </script>
     <script src="js/script.js"></script>
