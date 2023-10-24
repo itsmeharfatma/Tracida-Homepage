@@ -1,4 +1,3 @@
-
 @layer utilities {
     /* Hamburger Menu */
     .hamburger {
@@ -45,5 +44,13 @@
 
     .open .hamburger-bottom {
         transform: rotate(-45deg) translateY(6px) translate(-6px);
+    }
+}
+
+
+@layer components {
+    /* Accordions */
+    .accordion-item.active .accordion-icon {
+        transform: rotate(180deg);
     }
 }
