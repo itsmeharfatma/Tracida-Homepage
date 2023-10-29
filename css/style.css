@@ -16,6 +16,7 @@
         left: 0;
         width: 24px;
         height: 2px;
+        border-radius: 25px;
         background: black;
         transform: rotate(0px);
         transition: all 0.5s;
