@@ -63,7 +63,7 @@
         top: 0;
         width: 100%;
         transition: 0.1s ease-in;
-        overflow: hidden;
+        /* overflow: hidden; */
         z-index: 1;
         background-color: white;
         box-shadow: 4px 0px 8px #e0e0e0;
