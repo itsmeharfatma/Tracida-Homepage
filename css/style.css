@@ -1,4 +1,5 @@
 @layer utilities {
+
     /* Hamburger Menu */
     .hamburger {
         cursor: pointer;
@@ -50,8 +51,26 @@
 
 
 @layer components {
+
     /* Accordions */
     .accordion-item.active .accordion-icon {
         transform: rotate(180deg);
+    }
+
+    /* sticky navbar */
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: 0.1s ease-in;
+        overflow: hidden;
+        z-index: 1;
+        background-color: white;
+        box-shadow: 4px 0px 8px #e0e0e0;
+    }
+
+    /* Font */
+    .fontStyle {
+        font-family: 'Montserrat', sans-serif;
     }
 }
